@@ -64,7 +64,7 @@ CLASSGW_MODEL=gpt-5.6-terra
 CLASSGW_EMBED_MODEL=openai/text-embedding-3-small
 ```
 
-Never prefix these variables with `NEXT_PUBLIC_` and never commit `.env.local`. `CLASSGW_BASE_URL` must be the CognitioLabs OpenAI-compatible API base URL. Set `CLASSGW_MODEL` to `gpt-5.6-terra` and `CLASSGW_EMBED_MODEL` to `openai/text-embedding-3-small`.
+Never prefix these variables with `NEXT_PUBLIC_`, `VITE_`, or another public-variable prefix, and never commit any `.env*` file other than `.env.example`. `CLASSGW_BASE_URL` must be the CognitioLabs OpenAI-compatible API base URL. Set `CLASSGW_MODEL` to `gpt-5.6-terra` and `CLASSGW_EMBED_MODEL` to `openai/text-embedding-3-small`.
 
 `COGNITIOLABS_API_KEY` and `COGNITIOLABS_BASE_URL` remain supported for existing deployments, but use the four `CLASSGW_*` variables for new configuration.
 
@@ -78,4 +78,4 @@ The script sends the searchable text for each seeded product to CognitioLabs and
 
 ## Deploy to Vercel
 
-Push the repository to GitHub, import it into Vercel, and leave the framework preset as Next.js. Add all three `CLASSGW_*` variables in Vercel Project Settings. Vercel will run the production build automatically.
+Push the repository to GitHub, import it into Vercel, and leave the framework preset as Next.js. Add `CLASSGW_KEY`, `CLASSGW_BASE_URL`, `CLASSGW_MODEL`, and `CLASSGW_EMBED_MODEL` in Vercel Project Settings; do not mark any of them as public. Vercel will run the production build automatically. The browser calls only `/api/search`, `/api/ask`, and `/api/listings`; those Node.js route handlers read the environment and call the gateway.

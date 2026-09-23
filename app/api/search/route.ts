@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { categories, filterCatalogueByIntent, searchCatalogue } from "@/lib/catalogue";
 import { getSearchIntent, isAiConfigured, rankProductsBySemanticSimilarity, rerankSemanticCandidates } from "@/lib/ai";
 
+export const runtime = "nodejs";
+
 export async function POST(request: Request) {
   let body: unknown;
   try { body = await request.json(); } catch { return NextResponse.json({ error: "Expected JSON request body." }, { status: 400 }); }

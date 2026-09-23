@@ -1,11 +1,16 @@
 import OpenAI from "openai";
+import { env } from "node:process";
 import savedEmbeddings from "@/data/product-embeddings.json";
 import type { Product } from "@/lib/types";
 import type { ProductCondition } from "@/lib/types";
 
-/** CognitioLabs gateway model identifiers. Keep these server-side and fixed. */
-export const CHAT_MODEL = process.env.CLASSGW_MODEL || "gpt-5.6-terra";
-export const EMBEDDING_MODEL = process.env.CLASSGW_EMBED_MODEL || "openai/text-embedding-3-small";
+/**
+ * Node-only AI gateway integration. The node:process import deliberately makes
+ * this module unavailable to Client Components; import it only from route
+ * handlers or trusted Node scripts.
+ */
+export const CHAT_MODEL = env.CLASSGW_MODEL || "gpt-5.6-terra";
+export const EMBEDDING_MODEL = env.CLASSGW_EMBED_MODEL || "openai/text-embedding-3-small";
 export const MAX_SEMANTIC_SEARCH_RESULTS = 12;
 
 export interface SearchIntent {
@@ -25,8 +30,8 @@ export function isAiConfigured() {
 }
 
 function gatewayConfig() {
-  const apiKey = process.env.CLASSGW_KEY ?? process.env.COGNITIOLABS_API_KEY;
-  const baseURL = process.env.CLASSGW_BASE_URL ?? process.env.COGNITIOLABS_BASE_URL;
+  const apiKey = env.CLASSGW_KEY ?? env.COGNITIOLABS_API_KEY;
+  const baseURL = env.CLASSGW_BASE_URL ?? env.COGNITIOLABS_BASE_URL;
   return apiKey && baseURL ? { apiKey, baseURL } : null;
 }
 

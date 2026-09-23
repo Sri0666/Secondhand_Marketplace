@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { getProductById } from "@/lib/catalogue";
 import { CHAT_MODEL, getAiClient, isAiConfigured } from "@/lib/ai";
 
+export const runtime = "nodejs";
+
 export async function POST(request: Request) {
   let body: unknown;
   try { body = await request.json(); } catch { return NextResponse.json({ error: "Expected JSON request body." }, { status: 400 }); }
