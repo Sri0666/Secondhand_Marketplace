@@ -9,14 +9,25 @@ export function CatalogueBrowser({ products, categories }: { products: Product[]
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
   const [condition, setCondition] = useState("");
-
-  const matches = useMemo(() => products.filter((product) => {
-    const haystack = `${product.title} ${product.brand} ${product.model} ${product.category} ${product.condition} ${product.description}`.toLowerCase();
-    const matchesQuery = !query || query.toLowerCase().split(/\s+/).every((term) => haystack.includes(term));
-    return matchesQuery && (!category || product.category === category) && (!condition || product.condition === condition);
-  }), [products, query, category, condition]);
-
+  const [searchResults, setSearchResults] = useState(products);
+  const [searching, setSearching] = useState(false);
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const matches = useMemo(() => searchResults.filter((product) => (!category || product.category === category) && (!condition || product.condition === condition)), [searchResults, category, condition]);
   const activeFilters = [category && `Category: ${category}`, condition && `Condition: ${condition}`].filter(Boolean);
 
-  return <section className="space-y-5"><SearchBar query={query} category={category} condition={condition} categories={categories} onQueryChange={setQuery} onCategoryChange={setCategory} onConditionChange={setCondition} /><p aria-live="polite" className="text-sm text-slate-500">Showing {matches.length} demo listing{matches.length === 1 ? "" : "s"}{activeFilters.length ? ` — ${activeFilters.join(" · ")}` : ""}</p><ProductGrid key={`${query}-${category}-${condition}`} products={matches} /></section>;
+  async function runSearch() {
+    const trimmedQuery = query.trim();
+    if (!trimmedQuery) { setSearchResults(products); setMessage(""); setError(""); return; }
+    setSearching(true); setMessage(""); setError("");
+    try {
+      const response = await fetch("/api/search", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query: trimmedQuery }) });
+      const payload = await response.json() as { results?: Product[]; notice?: string; error?: string };
+      if (!response.ok || !payload.results) throw new Error(payload.error || "Search failed.");
+      setSearchResults(payload.results); setMessage(payload.notice || "AI interpreted your search and ranked the local catalogue.");
+    } catch (requestError) { setError(requestError instanceof Error ? requestError.message : "Search failed."); }
+    finally { setSearching(false); }
+  }
+
+  return <section className="space-y-5"><SearchBar query={query} category={category} condition={condition} categories={categories} searching={searching} onSearch={runSearch} onQueryChange={setQuery} onCategoryChange={setCategory} onConditionChange={setCondition} /><div aria-live="polite" className="space-y-1"><p className="text-sm text-slate-500">Showing {matches.length} demo listing{matches.length === 1 ? "" : "s"}{activeFilters.length ? ` — ${activeFilters.join(" · ")}` : ""}</p>{message && <p className="text-sm text-slate-600">{message}</p>}{error && <p className="text-sm text-red-700">{error}</p>}</div><ProductGrid key={`${query}-${category}-${condition}`} products={matches} /></section>;
 }
