@@ -12,7 +12,7 @@
     "generate:listing-tags": "tsx scripts/backfill-listing-tags.ts"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "15.1.11",
     "openai": "^4.79.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
