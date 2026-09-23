@@ -1,32 +1,824 @@
 [
-  {"id":"aurora-13","title":"Aurora 13 Developer Laptop","brand":"Northstar","model":"Aurora 13","category":"Laptops","price":480,"condition":"Working","description":"Compact demo ultrabook for study, browsing, and everyday coding.","images":["/images/product-placeholder.svg"],"specifications":{"Processor":"Intel Core i5 10th gen","Memory":"16 GB","Storage":"512 GB SSD","Display":"13.3-inch FHD"},"knownIssues":["Light cosmetic wear on lid"],"testedFunctions":["Boots","Wi-Fi","Keyboard","Webcam","USB ports"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. USB-C charger included."},
-  {"id":"circuitbook-14","title":"CircuitBook 14 Ryzen Laptop","brand":"CircuitWorks","model":"CB14-R5","category":"Laptops","price":620,"condition":"Working","description":"Lightweight demo laptop with a recent Ryzen processor and 1 TB storage.","images":["/images/product-placeholder.svg"],"specifications":{"Processor":"AMD Ryzen 5 5625U","Memory":"16 GB","Storage":"1 TB NVMe SSD","Display":"14-inch 1920 x 1200 IPS","Battery health":"91% estimated"},"knownIssues":["Faint mark beside trackpad"],"testedFunctions":["Cold boot","HDMI output","Wi-Fi","Speakers","Fingerprint reader"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Original charger and sleeve included."},
-  {"id":"orbit-s","title":"Orbit S Smartphone","brand":"Orbit","model":"S","category":"Smartphones","price":210,"condition":"Minor Fault","description":"Unlocked 128 GB demo smartphone with usable display and camera.","images":["/images/product-placeholder.svg"],"specifications":{"Storage":"128 GB","Display":"6.1-inch OLED","Camera":"Dual 12 MP","Network":"5G","Battery health":"82% estimated"},"knownIssues":["Small scuff near charging port","Battery drains faster than new"],"testedFunctions":["Touchscreen","Cameras","Face unlock","Calls","Charging"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Device only."},
-  {"id":"pixelwave-8","title":"PixelWave 8 Phone","brand":"PixelWave","model":"8","category":"Smartphones","price":340,"condition":"Working","description":"Demo Android phone with a bright OLED display and 256 GB storage.","images":["/images/product-placeholder.svg"],"specifications":{"Storage":"256 GB","Display":"6.2-inch 120 Hz OLED","Camera":"50 MP main plus 12 MP ultrawide","Network":"5G","Colour":"Sage"},"knownIssues":["Tiny paint chip on lower frame"],"testedFunctions":["SIM calls","Wi-Fi","Bluetooth","All cameras","Wireless charging"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. No box or charging cable."},
-  {"id":"vista-q27","title":"Vista 27-inch QHD Monitor","brand":"Vista","model":"Q27","category":"Monitors","price":155,"condition":"Working","description":"Crisp QHD monitor suited to a compact work-from-home desk.","images":["/images/product-placeholder.svg"],"specifications":{"Panel":"IPS","Resolution":"2560 x 1440","Refresh rate":"75 Hz","Inputs":"HDMI, DisplayPort","Mount":"VESA 100 x 100"},"knownIssues":["No original stand; VESA compatible"],"testedFunctions":["Display","All inputs","On-screen controls"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Power cable included."},
-  {"id":"arcview-34","title":"ArcView 34 Ultrawide Monitor","brand":"ArcView","model":"UW34","category":"Monitors","price":295,"condition":"Minor Fault","description":"Curved ultrawide demo monitor for multitasking with one stuck pixel.","images":["/images/product-placeholder.svg"],"specifications":{"Panel":"VA","Resolution":"3440 x 1440","Refresh rate":"100 Hz","Inputs":"2 x HDMI, DisplayPort, USB-C","Screen size":"34 inches"},"knownIssues":["One stuck green pixel near top-right","Stand has desk scratches"],"testedFunctions":["DisplayPort","HDMI","USB-C video","Adaptive sync"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Stand and power supply included."},
-  {"id":"pulse-6700","title":"Pulse 6700 Graphics Card","brand":"Pulse","model":"6700 10 GB","category":"GPUs","price":290,"condition":"Working","description":"Mid-range demo GPU, cleaned and tested under gaming load.","images":["/images/product-placeholder.svg"],"specifications":{"Memory":"10 GB GDDR6","Interface":"PCIe 4.0","Outputs":"3 x DisplayPort, HDMI","Power":"2 x 8-pin"},"knownIssues":["Minor marks on backplate"],"testedFunctions":["Video output","Fan curve","30-minute load test"],"listingType":"Components","sellerNotes":"Fictional demo listing. Anti-static bag included."},
-  {"id":"forged-7800","title":"Forged 7800 XT Graphics Card","brand":"Forged","model":"RX 7800 XT","category":"GPUs","price":585,"condition":"Working","description":"High-performance demo GPU for 1440p gaming and creator workloads.","images":["/images/product-placeholder.svg"],"specifications":{"Memory":"16 GB GDDR6","Interface":"PCIe 4.0","Outputs":"3 x DisplayPort 2.1, HDMI 2.1","Power":"2 x 8-pin","Length":"320 mm"},"knownIssues":["Packaging missing"],"testedFunctions":["3D stress test","All display outputs","Fan stop mode","Temperature monitoring"],"listingType":"Components","sellerNotes":"Fictional demo listing. Confirm case clearance before buying."},
-  {"id":"vector-32","title":"Vector 32 GB DDR4 RAM Kit","brand":"Vector","model":"DDR4-3200","category":"RAM","price":68,"condition":"Working","description":"Matched 2 x 16 GB memory kit for compatible desktops.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"32 GB (2 x 16 GB)","Speed":"3200 MT/s","Type":"DDR4","Latency":"CL16"},"knownIssues":["None reported"],"testedFunctions":["Memory diagnostic pass","Dual-channel boot"],"listingType":"Components","sellerNotes":"Fictional demo listing."},
-  {"id":"mosaic-ddr5-64","title":"Mosaic 64 GB DDR5 RAM Kit for Repair","brand":"Mosaic","model":"DDR5-6000","category":"RAM","price":75,"condition":"Repair Needed","description":"High-capacity DDR5 demo kit that boots at base speed but fails memory testing when EXPO is enabled.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"64 GB (2 x 32 GB)","Speed":"6000 MT/s rated","Type":"DDR5","Latency":"CL36","Profile":"EXPO"},"knownIssues":["System restarts during EXPO memory test","One heatspreader has a small scuff"],"testedFunctions":["Boots at JEDEC base speed","RGB lighting","EXPO profile does not complete test"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. Module-level fault has not been isolated."},
-  {"id":"helix-1tb","title":"Helix 1 TB NVMe SSD","brand":"Helix","model":"N1 1TB","category":"SSDs","price":72,"condition":"Minor Fault","description":"Fast demo NVMe drive with moderate previous usage.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"1 TB","Interface":"NVMe PCIe 3.0","Form factor":"M.2 2280","Health":"88% estimated"},"knownIssues":["Previous use visible in SMART health estimate"],"testedFunctions":["Read/write benchmark","SMART scan","Format test"],"listingType":"Components","sellerNotes":"Fictional demo listing."},
-  {"id":"quanta-2tb","title":"Quanta 2 TB SATA SSD","brand":"Quanta","model":"S2 2TB","category":"SSDs","price":115,"condition":"Working","description":"Large-capacity demo SSD for older laptops or desktop storage.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"2 TB","Interface":"SATA III","Form factor":"2.5-inch","Health":"96% estimated"},"knownIssues":["No SATA cable included"],"testedFunctions":["SMART scan","Full format","Sequential read/write test"],"listingType":"Components","sellerNotes":"Fictional demo listing. Securely erased before listing."},
-  {"id":"clickcraft-mx","title":"ClickCraft MX Mechanical Keyboard Repair Project","brand":"ClickCraft","model":"MX TKL","category":"Peripherals","price":28,"condition":"Repair Needed","description":"Hot-swappable demo keyboard with a non-responsive key column after a liquid spill.","images":["/images/product-placeholder.svg"],"specifications":{"Layout":"ANSI TKL","Switches":"Tactile","Connection":"USB-C wired","Backlight":"White LED"},"knownIssues":["Q, A, and Z keys do not register","Signs of prior liquid exposure"],"testedFunctions":["Most keys","USB connection","Backlight controls"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. Switches and USB-C cable included; PCB repair may be required."},
-  {"id":"driftmouse-pro","title":"DriftMouse Pro Wireless Mouse Repair Project","brand":"DriftMouse","model":"Pro","category":"Peripherals","price":18,"condition":"Repair Needed","description":"Ergonomic demo wireless mouse with an intermittent scroll-wheel encoder.","images":["/images/product-placeholder.svg"],"specifications":{"Sensor":"26,000 DPI optical","Connection":"2.4 GHz and Bluetooth","Battery":"Rechargeable","Weight":"82 g"},"knownIssues":["Scroll wheel skips direction intermittently","Rubber side grip has light wear"],"testedFunctions":["Left/right click","Bluetooth","USB receiver","Scroll click"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. USB receiver included; cable not included."},
-  {"id":"ridge-15-repair","title":"Ridge 15 Laptop Repair Project","brand":"Ridge","model":"15 Pro","category":"Laptops","price":95,"condition":"Repair Needed","description":"Repair project with a good screen and storage, but unreliable power-on.","images":["/images/product-placeholder.svg"],"specifications":{"Processor":"Intel Core i7 8th gen","Memory":"8 GB","Storage":"256 GB SSD","Display":"15.6-inch FHD"},"knownIssues":["Intermittent no-power condition","Battery missing"],"testedFunctions":["Display briefly tested with bench power","SSD detected externally"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. Sold for repair only."},
-  {"id":"workmate-16-fault","title":"WorkMate 16 Laptop with Screen Fault","brand":"WorkMate","model":"W16-11","category":"Laptops","price":260,"condition":"Minor Fault","description":"Usable demo laptop whose internal screen flickers at low brightness.","images":["/images/product-placeholder.svg"],"specifications":{"Processor":"Intel Core i5 11th gen","Memory":"16 GB","Storage":"512 GB SSD","Display":"16-inch 1920 x 1200 IPS"},"knownIssues":["Internal display flickers below 30% brightness","External monitor works normally"],"testedFunctions":["Boot","Keyboard","Trackpad","External HDMI","Webcam"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Charger included; suitable for docked use."},
-  {"id":"orbit-fold-repair","title":"Orbit Fold Repair Project","brand":"Orbit","model":"Fold One","category":"Smartphones","price":120,"condition":"Repair Needed","description":"Foldable demo phone with a damaged inner display but functioning outer screen.","images":["/images/product-placeholder.svg"],"specifications":{"Storage":"256 GB","Outer display":"6.2-inch OLED","Inner display":"7.4-inch folding OLED","Network":"5G"},"knownIssues":["Inner display has black line along fold","Hinge feels stiff"],"testedFunctions":["Outer touchscreen","Rear camera","USB-C charging","Wi-Fi"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. No attempt made to repair hinge or inner screen."},
-  {"id":"apex-24-flicker","title":"Apex 24-inch Gaming Monitor","brand":"Apex","model":"G24-144","category":"Monitors","price":80,"condition":"Minor Fault","description":"Affordable 144 Hz demo gaming monitor with flicker at its highest refresh rate.","images":["/images/product-placeholder.svg"],"specifications":{"Panel":"IPS","Resolution":"1920 x 1080","Refresh rate":"144 Hz","Inputs":"HDMI, DisplayPort"},"knownIssues":["Flickers occasionally at 144 Hz","Stable at 120 Hz"],"testedFunctions":["DisplayPort at 120 Hz","HDMI at 60 Hz","Menu controls"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Power cable included; no stand."},
-  {"id":"spectra-3080-repair","title":"Spectra 3080 Graphics Card for Repair","brand":"Spectra","model":"RTX 3080 10 GB","category":"GPUs","price":180,"condition":"Repair Needed","description":"High-end demo GPU that powers on but produces no display output.","images":["/images/product-placeholder.svg"],"specifications":{"Memory":"10 GB GDDR6X","Interface":"PCIe 4.0","Outputs":"3 x DisplayPort, HDMI","Power":"2 x 8-pin"},"knownIssues":["No video output","One fan connector was previously repaired"],"testedFunctions":["Fans spin","Card draws power","No successful display test"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. Board-level diagnosis has not been performed."},
-  {"id":"nebula-6600-fan","title":"Nebula 6600 Graphics Card","brand":"Nebula","model":"RX 6600","category":"GPUs","price":145,"condition":"Minor Fault","description":"Entry-level demo GPU with stable performance but one noisy fan under load.","images":["/images/product-placeholder.svg"],"specifications":{"Memory":"8 GB GDDR6","Interface":"PCIe 4.0","Outputs":"3 x DisplayPort, HDMI","Power":"1 x 8-pin"},"knownIssues":["Left fan rattles above 70% speed"],"testedFunctions":["Video output","20-minute game benchmark","Temperature monitoring"],"listingType":"Components","sellerNotes":"Fictional demo listing. Fan replacement may be worthwhile."},
-  {"id":"stride-ddr4-mixed","title":"Stride 16 GB DDR4 Memory Pair","brand":"Stride","model":"Mixed 8 GB Pair","category":"RAM","price":22,"condition":"Minor Fault","description":"Two tested 8 GB DDR4 modules with different rated speeds.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"16 GB (2 x 8 GB)","Speed":"2666 MT/s and 3200 MT/s","Type":"DDR4","Voltage":"1.2 V"},"knownIssues":["Not a matched kit","Both run at the lower shared speed"],"testedFunctions":["Booted together","Memory diagnostic pass"],"listingType":"Components","sellerNotes":"Fictional demo listing. Exact chip manufacturers not recorded."},
-  {"id":"ember-500gb-degraded","title":"Ember 500 GB NVMe SSD","brand":"Ember","model":"E500","category":"SSDs","price":20,"condition":"Repair Needed","description":"Demo NVMe drive detected by a test system but reporting severe wear and read errors.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"500 GB","Interface":"NVMe PCIe 3.0","Form factor":"M.2 2280","Health":"18% estimated"},"knownIssues":["SMART warnings","Read errors during extended scan"],"testedFunctions":["Detected in BIOS","SMART data read","Not suitable for reliable storage"],"listingType":"Repair Project","sellerNotes":"Fictional demo listing. Controller-board donor or diagnostic practice only."},
-  {"id":"framecam-4k","title":"FrameCam 4K Webcam","brand":"FrameCam","model":"4K Link","category":"Peripherals","price":62,"condition":"Minor Fault","description":"USB webcam with sharp video but a microphone that cuts out intermittently.","images":["/images/product-placeholder.svg"],"specifications":{"Video":"4K at 30 fps","Connection":"USB-C","Field of view":"90 degrees","Mount":"Monitor clip and tripod thread"},"knownIssues":["Built-in microphone drops audio after several minutes"],"testedFunctions":["4K video","Autofocus","USB-C connection","Microphone initially works"],"listingType":"Complete Device","sellerNotes":"Fictional demo listing. Best used with a separate microphone."},
-  {"id":"nova-mini-parts","title":"Nova Mini Phone Parts Only","brand":"Nova","model":"Mini 2","category":"Smartphones","price":35,"condition":"Parts Only","description":"Cracked demo phone intended as a source of salvage components.","images":["/images/product-placeholder.svg"],"specifications":{"Storage":"64 GB","Display":"5.8-inch OLED","Colour":"Graphite","Network":"4G"},"knownIssues":["Cracked display","Does not boot","Rear glass chipped"],"testedFunctions":["No functional testing completed"],"listingType":"Components","sellerNotes":"Fictional demo listing. Parts only; no returns."},
-  {"id":"quartzbook-parts","title":"QuartzBook 15 Laptop Chassis Parts","brand":"Quartz","model":"QB15-2019","category":"Laptops","price":55,"condition":"Parts Only","description":"Water-damaged demo laptop sold as a donor for chassis, keyboard, and screen assembly.","images":["/images/product-placeholder.svg"],"specifications":{"Display":"15.6-inch FHD","Keyboard":"Backlit US layout","Memory":"Removed","Storage":"Removed"},"knownIssues":["Liquid corrosion on motherboard","Does not power on","Battery swollen and removed"],"testedFunctions":["Screen and keyboard not tested"],"listingType":"Components","sellerNotes":"Fictional demo listing. Panel compatibility and screen condition are unknown."},
-  {"id":"lumen-27-cracked","title":"Lumen 27-inch Monitor with Cracked Panel","brand":"Lumen","model":"L27-FHD","category":"Monitors","price":30,"condition":"Parts Only","description":"Demo monitor with a cracked LCD panel for stand, power board, and casing parts.","images":["/images/product-placeholder.svg"],"specifications":{"Panel":"27-inch IPS","Resolution":"1920 x 1080","Inputs":"HDMI, DisplayPort","Mount":"VESA 100 x 100"},"knownIssues":["Panel is cracked","Image is unreadable"],"testedFunctions":["Power LED turns on","No further functional testing"],"listingType":"Components","sellerNotes":"Fictional demo listing. Power board revision has not been recorded."},
-  {"id":"atlas-2070-board","title":"Atlas 2070 Graphics Card Board","brand":"Atlas","model":"RTX 2070 PCB","category":"GPUs","price":45,"condition":"Parts Only","description":"Disassembled demo graphics card board without cooler, for component salvage or repair training.","images":["/images/product-placeholder.svg"],"specifications":{"Memory":"8 GB GDDR6","Interface":"PCIe 3.0","Cooler":"Not included","Backplate":"Not included"},"knownIssues":["Missing cooler","Missing several screws","Power-on state unknown"],"testedFunctions":["No functional testing completed"],"listingType":"Components","sellerNotes":"Fictional demo listing. Exact fault and board revision are not known."},
-  {"id":"copper-ram-lot","title":"Copper DDR3 RAM Assorted Lot","brand":"Copper","model":"DDR3 Assorted","category":"RAM","price":18,"condition":"Parts Only","description":"Assorted older desktop memory modules for hobby projects or component recovery.","images":["/images/product-placeholder.svg"],"specifications":{"Capacity":"Four modules; capacities not labelled","Type":"DDR3","Form factor":"Desktop DIMM","Speed":"Not provided"},"knownIssues":["Untested","Mixed manufacturers","One heatspreader is loose"],"testedFunctions":["No functional testing completed"],"listingType":"Components","sellerNotes":"Fictional demo listing. Individual module capacities and working status are unavailable."},
-  {"id":"ion-ssd-controller","title":"Ion 1 TB SATA SSD Controller Donor","brand":"Ion","model":"I1 SATA","category":"SSDs","price":12,"condition":"Parts Only","description":"Failed demo SATA SSD offered for connector and controller-board salvage only.","images":["/images/product-placeholder.svg"],"specifications":{"Labelled capacity":"1 TB","Interface":"SATA III","Form factor":"2.5-inch","NAND type":"Not provided"},"knownIssues":["Not detected by test system","No SMART data available"],"testedFunctions":["No functional testing beyond detection attempt"],"listingType":"Components","sellerNotes":"Fictional demo listing. Data recovery is not offered and prior contents are unknown."},
-  {"id":"sounddock-parts","title":"SoundDock USB Speaker Pair for Parts","brand":"SoundDock","model":"Mini Stereo","category":"Peripherals","price":10,"condition":"Parts Only","description":"Small desktop speaker pair with damaged USB lead and unknown amplifier condition.","images":["/images/product-placeholder.svg"],"specifications":{"Connection":"USB power and 3.5 mm audio","Channels":"Stereo","Colour":"Black","Power rating":"Not provided"},"knownIssues":["USB lead sheath split","One grille dented","Audio output untested"],"testedFunctions":["No functional testing completed"],"listingType":"Components","sellerNotes":"Fictional demo listing. Suitable for enclosure, driver, or cable salvage."}
+  {
+    "id": "macbook-air-m1-2020",
+    "title": "Apple MacBook Air M1 2020",
+    "brand": "Apple",
+    "model": "MacBook Air M1",
+    "category": "Laptops",
+    "subcategory": "Ultrabooks",
+    "price": 650,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Lightweight MacBook suitable for study, office work, coding and everyday use.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Processor": "Apple M1",
+      "Memory": "8 GB",
+      "Storage": "256 GB SSD",
+      "Display": "13.3-inch Retina",
+      "Battery health": "87%"
+    },
+    "filters": {
+      "processor": "Apple M1",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "storageType": "SSD",
+      "screenSize": "13.3 inch",
+      "batteryHealth": 87
+    },
+    "knownIssues": [
+      "Minor cosmetic marks on lid"
+    ],
+    "testedFunctions": [
+      "Boot",
+      "Wi-Fi",
+      "Keyboard",
+      "Webcam",
+      "USB-C ports"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Charger included.",
+    "aiTags": []
+  },
+  {
+    "id": "lenovo-thinkpad-t14-g2",
+    "title": "Lenovo ThinkPad T14 Gen 2",
+    "brand": "Lenovo",
+    "model": "ThinkPad T14 Gen 2",
+    "category": "Laptops",
+    "subcategory": "Business Laptops",
+    "price": 520,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Business laptop suitable for productivity, development and general use.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Processor": "Intel Core i5 11th Gen",
+      "Memory": "16 GB",
+      "Storage": "512 GB SSD",
+      "Display": "14-inch FHD",
+      "Battery health": "82%"
+    },
+    "filters": {
+      "processor": "Intel Core i5",
+      "ram": "16 GB",
+      "storage": "512 GB",
+      "storageType": "SSD",
+      "screenSize": "14 inch",
+      "batteryHealth": 82
+    },
+    "knownIssues": [
+      "Light wear around palm rest"
+    ],
+    "testedFunctions": [
+      "Boot",
+      "Wi-Fi",
+      "Keyboard",
+      "Trackpad",
+      "HDMI"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Original charger included.",
+    "aiTags": []
+  },
+  {
+    "id": "dell-xps-13-9310-fault",
+    "title": "Dell XPS 13 9310",
+    "brand": "Dell",
+    "model": "XPS 13 9310",
+    "category": "Laptops",
+    "subcategory": "Ultrabooks",
+    "price": 380,
+    "currency": "SGD",
+    "condition": "Minor Fault",
+    "location": "Singapore",
+    "description": "Premium compact laptop with a battery that no longer holds charge well.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Processor": "Intel Core i7 11th Gen",
+      "Memory": "16 GB",
+      "Storage": "512 GB SSD",
+      "Display": "13.4-inch FHD+",
+      "Battery health": "55%"
+    },
+    "filters": {
+      "processor": "Intel Core i7",
+      "ram": "16 GB",
+      "storage": "512 GB",
+      "storageType": "SSD",
+      "screenSize": "13.4 inch",
+      "batteryHealth": 55
+    },
+    "knownIssues": [
+      "Battery health is poor"
+    ],
+    "testedFunctions": [
+      "Boot",
+      "Display",
+      "Keyboard",
+      "Wi-Fi",
+      "USB-C"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Works normally while connected to power.",
+    "aiTags": []
+  },
+  {
+    "id": "iphone-13-128",
+    "title": "Apple iPhone 13 128 GB",
+    "brand": "Apple",
+    "model": "iPhone 13",
+    "category": "Smartphones",
+    "subcategory": "Smartphones",
+    "price": 430,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Unlocked iPhone in good working condition.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Storage": "128 GB",
+      "Display": "6.1-inch OLED",
+      "Network": "5G",
+      "Battery health": "86%"
+    },
+    "filters": {
+      "storage": "128 GB",
+      "network": "5G",
+      "screenSize": "6.1 inch",
+      "batteryHealth": 86
+    },
+    "knownIssues": [
+      "Small scratches on frame"
+    ],
+    "testedFunctions": [
+      "Touchscreen",
+      "Face ID",
+      "Cameras",
+      "Calls",
+      "Charging"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Phone only.",
+    "aiTags": []
+  },
+  {
+    "id": "samsung-s22",
+    "title": "Samsung Galaxy S22 128 GB",
+    "brand": "Samsung",
+    "model": "Galaxy S22",
+    "category": "Smartphones",
+    "subcategory": "Smartphones",
+    "price": 300,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Compact Android flagship with AMOLED display and 5G.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Storage": "128 GB",
+      "Display": "6.1-inch AMOLED 120 Hz",
+      "Network": "5G",
+      "Camera": "50 MP main",
+      "Battery health": "84%"
+    },
+    "filters": {
+      "storage": "128 GB",
+      "network": "5G",
+      "screenSize": "6.1 inch",
+      "batteryHealth": 84
+    },
+    "knownIssues": [
+      "Minor wear around charging port"
+    ],
+    "testedFunctions": [
+      "Touchscreen",
+      "Cameras",
+      "Wi-Fi",
+      "Bluetooth",
+      "Charging"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "USB-C cable included.",
+    "aiTags": []
+  },
+  {
+    "id": "pixel-7-screen",
+    "title": "Google Pixel 7",
+    "brand": "Google",
+    "model": "Pixel 7",
+    "category": "Smartphones",
+    "subcategory": "Smartphones",
+    "price": 150,
+    "currency": "SGD",
+    "condition": "Repair Needed",
+    "location": "Singapore",
+    "description": "Phone powers on but has a damaged display.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Storage": "128 GB",
+      "Display": "6.3-inch OLED",
+      "Network": "5G"
+    },
+    "filters": {
+      "storage": "128 GB",
+      "network": "5G",
+      "screenSize": "6.3 inch"
+    },
+    "knownIssues": [
+      "Cracked OLED display",
+      "Touch input partially working"
+    ],
+    "testedFunctions": [
+      "Boot",
+      "Charging",
+      "Rear camera",
+      "Wi-Fi"
+    ],
+    "listingType": "Repair Project",
+    "sellerNotes": "Suitable for screen replacement.",
+    "aiTags": []
+  },
+  {
+    "id": "ipad-air-5",
+    "title": "Apple iPad Air 5th Gen 64 GB",
+    "brand": "Apple",
+    "model": "iPad Air 5",
+    "category": "Tablets",
+    "subcategory": "Tablets",
+    "price": 480,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "M1-powered tablet suitable for study, media and productivity.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Processor": "Apple M1",
+      "Storage": "64 GB",
+      "Display": "10.9-inch Liquid Retina",
+      "Connectivity": "Wi-Fi"
+    },
+    "filters": {
+      "processor": "Apple M1",
+      "storage": "64 GB",
+      "screenSize": "10.9 inch",
+      "connectivity": "Wi-Fi"
+    },
+    "knownIssues": [
+      "Small scratch on rear casing"
+    ],
+    "testedFunctions": [
+      "Touchscreen",
+      "Wi-Fi",
+      "Cameras",
+      "USB-C",
+      "Speakers"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Tablet only.",
+    "aiTags": []
+  },
+  {
+    "id": "dell-u2720q",
+    "title": "Dell UltraSharp U2720Q 27-inch Monitor",
+    "brand": "Dell",
+    "model": "U2720Q",
+    "category": "Monitors",
+    "subcategory": "Office Monitors",
+    "price": 280,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "27-inch 4K monitor suited for productivity and creative work.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Panel": "IPS",
+      "Resolution": "3840 x 2160",
+      "Screen size": "27 inches",
+      "Refresh rate": "60 Hz",
+      "Inputs": "HDMI, DisplayPort, USB-C"
+    },
+    "filters": {
+      "screenSize": "27 inch",
+      "resolution": "3840 x 2160",
+      "refreshRate": 60,
+      "panelType": "IPS"
+    },
+    "knownIssues": [
+      "Minor scratches on stand"
+    ],
+    "testedFunctions": [
+      "Display",
+      "HDMI",
+      "DisplayPort",
+      "USB-C"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Power cable included.",
+    "aiTags": []
+  },
+  {
+    "id": "lg-27gp850",
+    "title": "LG UltraGear 27GP850-B Gaming Monitor",
+    "brand": "LG",
+    "model": "27GP850-B",
+    "category": "Monitors",
+    "subcategory": "Gaming Monitors",
+    "price": 240,
+    "currency": "SGD",
+    "condition": "Minor Fault",
+    "location": "Singapore",
+    "description": "High-refresh-rate QHD gaming monitor.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Panel": "IPS",
+      "Resolution": "2560 x 1440",
+      "Refresh rate": "165 Hz",
+      "Screen size": "27 inches"
+    },
+    "filters": {
+      "screenSize": "27 inch",
+      "resolution": "2560 x 1440",
+      "refreshRate": 165,
+      "panelType": "IPS"
+    },
+    "knownIssues": [
+      "One stuck pixel near upper-right corner"
+    ],
+    "testedFunctions": [
+      "DisplayPort",
+      "HDMI",
+      "144 Hz mode",
+      "Menu controls"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Stand and power adapter included.",
+    "aiTags": []
+  },
+  {
+    "id": "rtx-3070",
+    "title": "NVIDIA GeForce RTX 3070 8 GB",
+    "brand": "NVIDIA",
+    "model": "GeForce RTX 3070",
+    "category": "Computer Components",
+    "subcategory": "GPUs",
+    "price": 330,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Graphics card suitable for 1440p gaming and GPU workloads.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Memory": "8 GB GDDR6",
+      "Interface": "PCIe 4.0",
+      "Outputs": "DisplayPort, HDMI"
+    },
+    "filters": {
+      "vram": "8 GB",
+      "memoryType": "GDDR6",
+      "interface": "PCIe 4.0"
+    },
+    "knownIssues": [
+      "Minor cosmetic marks"
+    ],
+    "testedFunctions": [
+      "Video output",
+      "Gaming benchmark",
+      "Temperature test"
+    ],
+    "listingType": "Component",
+    "sellerNotes": "Tested before listing.",
+    "aiTags": []
+  },
+  {
+    "id": "rx-6700xt",
+    "title": "AMD Radeon RX 6700 XT 12 GB",
+    "brand": "AMD",
+    "model": "Radeon RX 6700 XT",
+    "category": "Computer Components",
+    "subcategory": "GPUs",
+    "price": 280,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Mid-range graphics card suitable for 1440p gaming.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Memory": "12 GB GDDR6",
+      "Interface": "PCIe 4.0",
+      "Outputs": "DisplayPort, HDMI"
+    },
+    "filters": {
+      "vram": "12 GB",
+      "memoryType": "GDDR6",
+      "interface": "PCIe 4.0"
+    },
+    "knownIssues": [],
+    "testedFunctions": [
+      "Video output",
+      "30-minute stress test",
+      "Fan test"
+    ],
+    "listingType": "Component",
+    "sellerNotes": "GPU only.",
+    "aiTags": []
+  },
+  {
+    "id": "rtx-3080-repair",
+    "title": "ASUS TUF Gaming GeForce RTX 3080",
+    "brand": "ASUS",
+    "model": "TUF RTX 3080",
+    "category": "Computer Components",
+    "subcategory": "GPUs",
+    "price": 180,
+    "currency": "SGD",
+    "condition": "Repair Needed",
+    "location": "Singapore",
+    "description": "Graphics card powers on but does not produce video output.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Memory": "10 GB GDDR6X",
+      "Interface": "PCIe 4.0"
+    },
+    "filters": {
+      "vram": "10 GB",
+      "memoryType": "GDDR6X",
+      "interface": "PCIe 4.0"
+    },
+    "knownIssues": [
+      "No display output"
+    ],
+    "testedFunctions": [
+      "Fans spin",
+      "Power detected"
+    ],
+    "listingType": "Repair Project",
+    "sellerNotes": "Board-level diagnosis not performed.",
+    "aiTags": []
+  },
+  {
+    "id": "corsair-ddr4-32",
+    "title": "Corsair Vengeance LPX 32 GB DDR4 Kit",
+    "brand": "Corsair",
+    "model": "Vengeance LPX",
+    "category": "Computer Components",
+    "subcategory": "RAM",
+    "price": 65,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Matched desktop memory kit.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Capacity": "32 GB (2 x 16 GB)",
+      "Speed": "3200 MT/s",
+      "Type": "DDR4"
+    },
+    "filters": {
+      "capacity": "32 GB",
+      "ramType": "DDR4",
+      "speed": 3200
+    },
+    "knownIssues": [],
+    "testedFunctions": [
+      "Memory diagnostic",
+      "Dual-channel boot"
+    ],
+    "listingType": "Component",
+    "sellerNotes": "Sold as a matched pair.",
+    "aiTags": []
+  },
+  {
+    "id": "kingston-ddr5-32",
+    "title": "Kingston Fury Beast 32 GB DDR5 Kit",
+    "brand": "Kingston",
+    "model": "Fury Beast DDR5",
+    "category": "Computer Components",
+    "subcategory": "RAM",
+    "price": 85,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "DDR5 desktop memory kit.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Capacity": "32 GB (2 x 16 GB)",
+      "Speed": "6000 MT/s",
+      "Type": "DDR5"
+    },
+    "filters": {
+      "capacity": "32 GB",
+      "ramType": "DDR5",
+      "speed": 6000
+    },
+    "knownIssues": [],
+    "testedFunctions": [
+      "Memory test",
+      "Dual-channel boot"
+    ],
+    "listingType": "Component",
+    "sellerNotes": "Both modules tested.",
+    "aiTags": []
+  },
+  {
+    "id": "samsung-970evo-1tb",
+    "title": "Samsung 970 EVO Plus 1 TB NVMe SSD",
+    "brand": "Samsung",
+    "model": "970 EVO Plus",
+    "category": "Computer Components",
+    "subcategory": "Storage",
+    "price": 70,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "NVMe SSD suitable for laptops and desktops.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Capacity": "1 TB",
+      "Interface": "NVMe PCIe 3.0",
+      "Form factor": "M.2 2280",
+      "Health": "93%"
+    },
+    "filters": {
+      "capacity": "1 TB",
+      "storageType": "NVMe SSD",
+      "interface": "PCIe 3.0",
+      "formFactor": "M.2 2280",
+      "driveHealth": 93
+    },
+    "knownIssues": [],
+    "testedFunctions": [
+      "SMART scan",
+      "Read/write benchmark",
+      "Format test"
+    ],
+    "listingType": "Component",
+    "sellerNotes": "Securely erased.",
+    "aiTags": []
+  },
+  {
+    "id": "wd-sn750-worn",
+    "title": "WD Black SN750 1 TB NVMe SSD",
+    "brand": "Western Digital",
+    "model": "Black SN750",
+    "category": "Computer Components",
+    "subcategory": "Storage",
+    "price": 35,
+    "currency": "SGD",
+    "condition": "Minor Fault",
+    "location": "Singapore",
+    "description": "Used NVMe SSD with significant write usage.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Capacity": "1 TB",
+      "Interface": "NVMe PCIe 3.0",
+      "Form factor": "M.2 2280",
+      "Health": "72%"
+    },
+    "filters": {
+      "capacity": "1 TB",
+      "storageType": "NVMe SSD",
+      "interface": "PCIe 3.0",
+      "formFactor": "M.2 2280",
+      "driveHealth": 72
+    },
+    "knownIssues": [
+      "SMART health reduced due to previous usage"
+    ],
+    "testedFunctions": [
+      "SMART scan",
+      "Read benchmark"
+    ],
+    "listingType": "Component",
+    "sellerNotes": "Suitable for non-critical secondary storage.",
+    "aiTags": []
+  },
+  {
+    "id": "keychron-k2",
+    "title": "Keychron K2 Mechanical Keyboard",
+    "brand": "Keychron",
+    "model": "K2",
+    "category": "Peripherals",
+    "subcategory": "Keyboards",
+    "price": 55,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Compact wireless mechanical keyboard.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Layout": "75%",
+      "Connection": "Bluetooth and USB-C",
+      "Backlight": "RGB"
+    },
+    "filters": {
+      "connection": [
+        "Bluetooth",
+        "USB-C"
+      ],
+      "deviceType": "Keyboard"
+    },
+    "knownIssues": [
+      "Minor keycap shine"
+    ],
+    "testedFunctions": [
+      "All keys",
+      "Bluetooth",
+      "USB-C",
+      "Backlight"
+    ],
+    "listingType": "Accessory",
+    "sellerNotes": "USB-C cable included.",
+    "aiTags": []
+  },
+  {
+    "id": "mx-master-3s",
+    "title": "Logitech MX Master 3S",
+    "brand": "Logitech",
+    "model": "MX Master 3S",
+    "category": "Peripherals",
+    "subcategory": "Mice",
+    "price": 75,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Wireless productivity mouse with ergonomic design.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Connection": "Bluetooth and Logi Bolt",
+      "Sensor": "8000 DPI",
+      "Battery": "Rechargeable"
+    },
+    "filters": {
+      "connection": [
+        "Bluetooth",
+        "Wireless"
+      ],
+      "deviceType": "Mouse"
+    },
+    "knownIssues": [
+      "Light wear on side grip"
+    ],
+    "testedFunctions": [
+      "Buttons",
+      "Scroll wheels",
+      "Bluetooth",
+      "Charging"
+    ],
+    "listingType": "Accessory",
+    "sellerNotes": "Receiver included.",
+    "aiTags": []
+  },
+  {
+    "id": "sony-wh1000xm4",
+    "title": "Sony WH-1000XM4 Headphones",
+    "brand": "Sony",
+    "model": "WH-1000XM4",
+    "category": "Audio",
+    "subcategory": "Headphones",
+    "price": 180,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Wireless noise-cancelling headphones.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Connection": "Bluetooth",
+      "Noise cancellation": "Active",
+      "Charging": "USB-C"
+    },
+    "filters": {
+      "connection": "Wireless",
+      "deviceType": "Headphones",
+      "noiseCancellation": true
+    },
+    "knownIssues": [
+      "Minor wear on ear cushions"
+    ],
+    "testedFunctions": [
+      "Audio",
+      "Bluetooth",
+      "ANC",
+      "Microphone",
+      "Charging"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Carrying case included.",
+    "aiTags": []
+  },
+  {
+    "id": "ps5-disc",
+    "title": "Sony PlayStation 5 Disc Edition",
+    "brand": "Sony",
+    "model": "PlayStation 5",
+    "category": "Gaming",
+    "subcategory": "Consoles",
+    "price": 480,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "PlayStation 5 console with disc drive.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Storage": "825 GB SSD",
+      "Edition": "Disc",
+      "Output": "Up to 4K"
+    },
+    "filters": {
+      "consoleType": "PlayStation",
+      "storage": "825 GB",
+      "edition": "Disc"
+    },
+    "knownIssues": [
+      "Minor scratches on side panels"
+    ],
+    "testedFunctions": [
+      "Boot",
+      "Disc drive",
+      "HDMI",
+      "Wi-Fi",
+      "USB"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "One DualSense controller included.",
+    "aiTags": []
+  },
+  {
+    "id": "asus-rtax86u",
+    "title": "ASUS RT-AX86U Wi-Fi 6 Router",
+    "brand": "ASUS",
+    "model": "RT-AX86U",
+    "category": "Networking",
+    "subcategory": "Routers",
+    "price": 150,
+    "currency": "SGD",
+    "condition": "Working",
+    "location": "Singapore",
+    "description": "Wi-Fi 6 router suitable for home networks and gaming.",
+    "images": [
+      "/images/product-placeholder.svg"
+    ],
+    "specifications": {
+      "Wi-Fi": "Wi-Fi 6",
+      "Bands": "Dual-band",
+      "Ethernet": "Gigabit and 2.5GbE"
+    },
+    "filters": {
+      "wifiStandard": "Wi-Fi 6",
+      "bands": "Dual-band",
+      "maxEthernet": "2.5GbE"
+    },
+    "knownIssues": [],
+    "testedFunctions": [
+      "Wi-Fi",
+      "Ethernet",
+      "Web interface",
+      "Reset"
+    ],
+    "listingType": "Complete Device",
+    "sellerNotes": "Power adapter included.",
+    "aiTags": []
+  }
 ]

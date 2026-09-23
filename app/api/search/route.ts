@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { categories, searchCatalogue, searchCatalogueByIntent } from "@/lib/catalogue";
-import { getSearchIntent, isAiConfigured } from "@/lib/ai";
+import { categories, filterCatalogueByIntent, searchCatalogue } from "@/lib/catalogue";
+import { getSearchIntent, isAiConfigured, rankProductsBySemanticSimilarity, rerankSemanticCandidates } from "@/lib/ai";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -11,7 +11,9 @@ export async function POST(request: Request) {
 
   try {
     const intent = await getSearchIntent(query, categories);
-    return NextResponse.json({ query, mode: "ai", intent, results: searchCatalogueByIntent(intent) });
+    const semanticCandidates = await rankProductsBySemanticSimilarity(query, filterCatalogueByIntent(intent));
+    const { products: results, explanation } = await rerankSemanticCandidates(query, semanticCandidates);
+    return NextResponse.json({ query, mode: "ai", intent, productIds: results.map((product) => product.id), explanation, results });
   } catch (error) {
     console.error("AI search failed", error);
     return NextResponse.json({ query, mode: "local", results: searchCatalogue(query), notice: "AI search is temporarily unavailable; showing local keyword results." });
