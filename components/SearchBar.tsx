@@ -1,0 +1,7 @@
+"use client";
+
+interface SearchBarProps { query: string; category: string; condition: string; categories: string[]; onQueryChange: (value: string) => void; onCategoryChange: (value: string) => void; onConditionChange: (value: string) => void; }
+
+export function SearchBar(props: SearchBarProps) {
+  return <div className="grid gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:grid-cols-[1fr_180px_180px]"><input aria-label="Search listings" value={props.query} onChange={(event) => props.onQueryChange(event.target.value)} placeholder="Try ‘working laptop under 500’" className="min-w-0 rounded-lg border border-slate-300 px-3 py-2.5 outline-none ring-moss focus:ring-2" /><select aria-label="Filter by category" value={props.category} onChange={(event) => props.onCategoryChange(event.target.value)} className="rounded-lg border border-slate-300 bg-white px-3 py-2.5"><option value="">All categories</option>{props.categories.map((category) => <option key={category}>{category}</option>)}</select><select aria-label="Filter by condition" value={props.condition} onChange={(event) => props.onConditionChange(event.target.value)} className="rounded-lg border border-slate-300 bg-white px-3 py-2.5"><option value="">All conditions</option><option>Working</option><option>Minor Fault</option><option>Repair Needed</option><option>Parts Only</option></select></div>;
+}
