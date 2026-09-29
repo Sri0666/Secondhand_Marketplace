@@ -32,6 +32,10 @@ npm run lint
 npm run build
 ```
 
+## Browse the catalogue
+
+Use the category, brand, condition, and listing type menus to narrow the listings. Locations supports selecting multiple places, and the price range can be adjusted by dragging either handle or clicking and dragging the track. The price handles also support keyboard input: use the arrow keys to adjust the value, or Home and End to move to the allowed limit. Select **Clear all** to reset the filters.
+
 ## Project structure
 
 ```text
