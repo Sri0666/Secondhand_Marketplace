@@ -1,0 +1,12 @@
+"use client";
+
+import { useState } from "react";
+import { CATEGORY_SUBCATEGORIES } from "@/lib/types";
+
+export function CategoryMenu({ categories, category, subcategory, onChoose }: { categories: string[]; category: string; subcategory: string; onChoose: (category: string, subcategory?: string) => void }) {
+  const [open, setOpen] = useState(false);
+  const selectedCategory = subcategory ? `${category} · ${subcategory}` : category;
+  const select = (nextCategory: string, nextSubcategory = "") => { onChoose(nextCategory, nextSubcategory); setOpen(false); };
+
+  return <section className="border-b border-slate-100 pb-4"><h3 className="mb-2 text-sm font-semibold text-ink">Categories</h3><div className="relative"><button type="button" aria-expanded={open} aria-haspopup="menu" onClick={() => setOpen((current) => !current)} className={`flex w-full items-center justify-between rounded-lg px-2 py-2 text-left text-sm font-semibold ${!category ? "bg-emerald-50 text-moss" : "text-slate-700 hover:bg-mist"}`}><span>All categories{selectedCategory && <span className="block text-xs font-medium text-moss">{selectedCategory}</span>}</span><span className="text-slate-400" aria-hidden="true">⌄</span></button>{open && <div role="menu" className="absolute left-0 top-full z-10 mt-1 w-full rounded-xl border border-slate-200 bg-white p-2 shadow-xl"><button type="button" role="menuitem" onClick={() => select("")} className={`w-full rounded-lg px-2 py-2 text-left text-sm font-semibold ${!category ? "bg-emerald-50 text-moss" : "text-slate-700 hover:bg-mist"}`}>All categories</button><div className="mt-1 space-y-1">{categories.map((parent) => <div key={parent}><button type="button" role="menuitem" onClick={() => select(parent)} className={`w-full rounded-lg px-2 py-2 text-left text-sm font-semibold ${category === parent && !subcategory ? "bg-emerald-50 text-moss" : "text-slate-700 hover:bg-mist"}`}>{parent}</button><div className="border-l border-slate-200 py-1 pl-3">{CATEGORY_SUBCATEGORIES[parent as keyof typeof CATEGORY_SUBCATEGORIES].map((child) => <button type="button" role="menuitem" key={child} onClick={() => select(parent, child)} className={`block w-full rounded-lg px-2 py-2 text-left text-sm ${category === parent && subcategory === child ? "bg-emerald-50 font-semibold text-moss" : "text-slate-600 hover:bg-mist hover:text-ink"}`}>{child}</button>)}</div></div>)}</div></div>}</div></section>;
+}

@@ -9,7 +9,7 @@
     "price": 650,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Tampines",
     "description": "Lightweight MacBook suitable for study, office work, coding and everyday use.",
     "images": [
       "/images/product-placeholder.svg"
@@ -41,7 +41,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Charger included.",
-    "aiTags": []
+    "aiTags": ["study-ready", "office-work", "coding-friendly", "lightweight"]
   },
   {
     "id": "lenovo-thinkpad-t14-g2",
@@ -53,7 +53,7 @@
     "price": 520,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Punggol",
     "description": "Business laptop suitable for productivity, development and general use.",
     "images": [
       "/images/product-placeholder.svg"
@@ -85,7 +85,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Original charger included.",
-    "aiTags": []
+    "aiTags": ["business-ready", "productivity", "coding-friendly", "portable"]
   },
   {
     "id": "dell-xps-13-9310-fault",
@@ -97,7 +97,7 @@
     "price": 380,
     "currency": "SGD",
     "condition": "Minor Fault",
-    "location": "Singapore",
+    "location": "Jurong East",
     "description": "Premium compact laptop with a battery that no longer holds charge well.",
     "images": [
       "/images/product-placeholder.svg"
@@ -129,7 +129,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Works normally while connected to power.",
-    "aiTags": []
+    "aiTags": ["portable", "battery-issue", "power-required", "office-work"]
   },
   {
     "id": "iphone-13-128",
@@ -141,7 +141,7 @@
     "price": 430,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Bedok",
     "description": "Unlocked iPhone in good working condition.",
     "images": [
       "/images/product-placeholder.svg"
@@ -170,7 +170,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Phone only.",
-    "aiTags": []
+    "aiTags": ["unlocked-phone", "5g-connectivity", "everyday-use"]
   },
   {
     "id": "samsung-s22",
@@ -182,7 +182,7 @@
     "price": 300,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Ang Mo Kio",
     "description": "Compact Android flagship with AMOLED display and 5G.",
     "images": [
       "/images/product-placeholder.svg"
@@ -212,7 +212,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "USB-C cable included.",
-    "aiTags": []
+    "aiTags": ["5g-connectivity", "high-refresh-rate", "compact-phone"]
   },
   {
     "id": "pixel-7-screen",
@@ -224,7 +224,7 @@
     "price": 150,
     "currency": "SGD",
     "condition": "Repair Needed",
-    "location": "Singapore",
+    "location": "Sengkang",
     "description": "Phone powers on but has a damaged display.",
     "images": [
       "/images/product-placeholder.svg"
@@ -251,7 +251,7 @@
     ],
     "listingType": "Repair Project",
     "sellerNotes": "Suitable for screen replacement.",
-    "aiTags": []
+    "aiTags": ["repair-project", "screen-damage", "5g-connectivity"]
   },
   {
     "id": "ipad-air-5",
@@ -263,7 +263,7 @@
     "price": 480,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Toa Payoh",
     "description": "M1-powered tablet suitable for study, media and productivity.",
     "images": [
       "/images/product-placeholder.svg"
@@ -292,7 +292,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Tablet only.",
-    "aiTags": []
+    "aiTags": ["study-ready", "media-consumption", "productivity"]
   },
   {
     "id": "dell-u2720q",
@@ -304,7 +304,7 @@
     "price": 280,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Bishan",
     "description": "27-inch 4K monitor suited for productivity and creative work.",
     "images": [
       "/images/product-placeholder.svg"
@@ -333,7 +333,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Power cable included.",
-    "aiTags": []
+    "aiTags": ["office-work", "creative-work", "high-resolution"]
   },
   {
     "id": "lg-27gp850",
@@ -345,7 +345,7 @@
     "price": 240,
     "currency": "SGD",
     "condition": "Minor Fault",
-    "location": "Singapore",
+    "location": "Clementi",
     "description": "High-refresh-rate QHD gaming monitor.",
     "images": [
       "/images/product-placeholder.svg"
@@ -373,7 +373,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Stand and power adapter included.",
-    "aiTags": []
+    "aiTags": ["gaming-ready", "high-refresh-rate", "stuck-pixel"]
   },
   {
     "id": "rtx-3070",
@@ -385,7 +385,7 @@
     "price": 330,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Hougang",
     "description": "Graphics card suitable for 1440p gaming and GPU workloads.",
     "images": [
       "/images/product-placeholder.svg"
@@ -410,7 +410,7 @@
     ],
     "listingType": "Component",
     "sellerNotes": "Tested before listing.",
-    "aiTags": []
+    "aiTags": ["1440p-gaming", "gpu-workloads", "stress-tested"]
   },
   {
     "id": "rx-6700xt",
@@ -422,7 +422,7 @@
     "price": 280,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Woodlands",
     "description": "Mid-range graphics card suitable for 1440p gaming.",
     "images": [
       "/images/product-placeholder.svg"
@@ -445,7 +445,7 @@
     ],
     "listingType": "Component",
     "sellerNotes": "GPU only.",
-    "aiTags": []
+    "aiTags": ["1440p-gaming", "gpu-workloads", "stress-tested"]
   },
   {
     "id": "rtx-3080-repair",
@@ -457,7 +457,7 @@
     "price": 180,
     "currency": "SGD",
     "condition": "Repair Needed",
-    "location": "Singapore",
+    "location": "Yishun",
     "description": "Graphics card powers on but does not produce video output.",
     "images": [
       "/images/product-placeholder.svg"
@@ -480,7 +480,7 @@
     ],
     "listingType": "Repair Project",
     "sellerNotes": "Board-level diagnosis not performed.",
-    "aiTags": []
+    "aiTags": ["repair-project", "no-video-output", "board-diagnosis"]
   },
   {
     "id": "corsair-ddr4-32",
@@ -492,7 +492,7 @@
     "price": 65,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Serangoon",
     "description": "Matched desktop memory kit.",
     "images": [
       "/images/product-placeholder.svg"
@@ -514,7 +514,7 @@
     ],
     "listingType": "Component",
     "sellerNotes": "Sold as a matched pair.",
-    "aiTags": []
+    "aiTags": ["desktop-upgrade", "matched-kit", "memory-upgrade"]
   },
   {
     "id": "kingston-ddr5-32",
@@ -526,7 +526,7 @@
     "price": 85,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Bukit Batok",
     "description": "DDR5 desktop memory kit.",
     "images": [
       "/images/product-placeholder.svg"
@@ -548,7 +548,7 @@
     ],
     "listingType": "Component",
     "sellerNotes": "Both modules tested.",
-    "aiTags": []
+    "aiTags": ["desktop-upgrade", "matched-kit", "performance-memory"]
   },
   {
     "id": "samsung-970evo-1tb",
@@ -560,7 +560,7 @@
     "price": 70,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Pasir Ris",
     "description": "NVMe SSD suitable for laptops and desktops.",
     "images": [
       "/images/product-placeholder.svg"
@@ -586,7 +586,7 @@
     ],
     "listingType": "Component",
     "sellerNotes": "Securely erased.",
-    "aiTags": []
+    "aiTags": ["storage-upgrade", "compact-storage", "securely-erased"]
   },
   {
     "id": "wd-sn750-worn",
@@ -598,7 +598,7 @@
     "price": 35,
     "currency": "SGD",
     "condition": "Minor Fault",
-    "location": "Singapore",
+    "location": "Choa Chu Kang",
     "description": "Used NVMe SSD with significant write usage.",
     "images": [
       "/images/product-placeholder.svg"
@@ -625,7 +625,7 @@
     ],
     "listingType": "Component",
     "sellerNotes": "Suitable for non-critical secondary storage.",
-    "aiTags": []
+    "aiTags": ["budget-storage", "secondary-drive", "reduced-health"]
   },
   {
     "id": "keychron-k2",
@@ -637,7 +637,7 @@
     "price": 55,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Kallang",
     "description": "Compact wireless mechanical keyboard.",
     "images": [
       "/images/product-placeholder.svg"
@@ -665,7 +665,7 @@
     ],
     "listingType": "Accessory",
     "sellerNotes": "USB-C cable included.",
-    "aiTags": []
+    "aiTags": ["wireless-keyboard", "compact-layout", "rgb-backlight"]
   },
   {
     "id": "mx-master-3s",
@@ -677,7 +677,7 @@
     "price": 75,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Queenstown",
     "description": "Wireless productivity mouse with ergonomic design.",
     "images": [
       "/images/product-placeholder.svg"
@@ -705,7 +705,7 @@
     ],
     "listingType": "Accessory",
     "sellerNotes": "Receiver included.",
-    "aiTags": []
+    "aiTags": ["productivity", "ergonomic", "wireless-mouse"]
   },
   {
     "id": "sony-wh1000xm4",
@@ -717,7 +717,7 @@
     "price": 180,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Orchard",
     "description": "Wireless noise-cancelling headphones.",
     "images": [
       "/images/product-placeholder.svg"
@@ -744,7 +744,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Carrying case included.",
-    "aiTags": []
+    "aiTags": ["noise-cancelling", "wireless-audio", "travel-ready"]
   },
   {
     "id": "ps5-disc",
@@ -756,7 +756,7 @@
     "price": 480,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Bukit Panjang",
     "description": "PlayStation 5 console with disc drive.",
     "images": [
       "/images/product-placeholder.svg"
@@ -783,7 +783,7 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "One DualSense controller included.",
-    "aiTags": []
+    "aiTags": ["console-gaming", "disc-games", "controller-included"]
   },
   {
     "id": "asus-rtax86u",
@@ -795,7 +795,7 @@
     "price": 150,
     "currency": "SGD",
     "condition": "Working",
-    "location": "Singapore",
+    "location": "Marina Bay",
     "description": "Wi-Fi 6 router suitable for home networks and gaming.",
     "images": [
       "/images/product-placeholder.svg"
@@ -819,6 +819,6 @@
     ],
     "listingType": "Complete Device",
     "sellerNotes": "Power adapter included.",
-    "aiTags": []
+    "aiTags": ["home-networking", "wifi-6", "gaming-network"]
   }
 ]
